@@ -27,6 +27,11 @@ export default class CreateUsers1598912126791 implements MigrationInterface {
                         isUnique: true,
                     },
                     {
+                        name: 'avatar',
+                        type: 'varchar',
+                        isNullable: true,
+                    },
+                    {
                         name: 'created_at',
                         type: 'timestamp',
                         default: 'now()',
@@ -37,7 +42,7 @@ export default class CreateUsers1598912126791 implements MigrationInterface {
                         default: 'now()',
                     },
                 ],
-            }),
+            })
         );
     }
 
